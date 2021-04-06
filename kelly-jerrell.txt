@@ -7,35 +7,32 @@ https://codepen.io/kcjerrell/pen/qBRXyaW
     Creating the structure and content of a webpage
 
  3. What is an attribute and where do we put it?
-    An attribute customizes an aspect of its element, and goes inside the
-    opening tag. For example:
+    An attribute customizes an aspect of its element, and goes inside the opening tag. For example:
       <div class="something">
       (class is the attribute)
 
  4. What is the h1 tag used for? How many times should I use it on a page?
-    h1 is the "biggest" header style, and should usually only be used once on a
-    page
+    h1 is the "biggest" header style, and should usually only be used once on a page.
 
  5. Name two tags that have required attributes
-    I'm not sure if any tags "require" attributes (in terms of being correct
-    html or breaking a page), but there's a few that don't make any sense
-    without them, like:
+    I'm not sure if any tags "require" attributes (in terms of being correct html or breaking a
+    page), but there's a few that don't make any sense without them, like:
       <a>this is not a link without href!</a>
       <img>   
 
  6. What do we put in the head of our HTML document?
-    The title of the webpage, references to .js files required by the page, .css
-    styles, and meta data for search engines   
+    The title of the webpage, references to .js files required by the page, .css styles, and meta
+    data for search engines
 
  7. What is an id?
-    An id is an attribute that lets you give one specific element a unique
-    identifier, so it can be selected in CSS or JS   
+    An id is an attribute that lets you give one specific element a unique identifier, so it can be
+    selected in CSS or JS
 
  8. What elements can I add an id to?
-    Any html element can have an id   
+    Any html element can have an id
 
  9. How many times can I use the same id on a page?
-    Just once   
+    Just once
 
 10. What is a class? 
     A class is a reusable descriptor to for selecting elements
@@ -43,7 +40,7 @@ https://codepen.io/kcjerrell/pen/qBRXyaW
 11. What elements can I add a class to? 
     Any element
 
-12. How many times can I use the same class on a page? 
+12. How many times can I use the same class on a page?
     No limit
 
 13. How do I get my link to open in a new tab?
@@ -51,7 +48,7 @@ https://codepen.io/kcjerrell/pen/qBRXyaW
     <a href="www.lambdaschool.com" target="_blank" rel="noopener noreferrer">Lambda</a>
     (the rel attribute is so the page doesn't know where the link was clicked from)
 
-14. What is the alt attribute in the image tag used for? 
+14. What is the alt attribute in the image tag used for?
     A textual desciption of the image, for accessibility
 
 15. How do I reference an id?
@@ -63,7 +60,7 @@ https://codepen.io/kcjerrell/pen/qBRXyaW
     div is an abitrary container that doesn't necesarrily have any semantic meaning.
 
 17. What is CSS used for? 
-    For styling the elements on a page
+    For styling and positioning the elements on a page
 
 18. How to we select an element? Example - every h2 on the page
     css: h2 { }
@@ -97,9 +94,9 @@ https://codepen.io/kcjerrell/pen/qBRXyaW
     css: h2 { letter-spacing: 3px; }    
 
 27. What do we use to to change everything to CAPITALS? lowercase? Capitalize?
-    css: h1 { text-transform: uppercase; }
-         h3 { text-transform: lowercase; }
-         h2 { text-transform: capitalize; }
+    css: h1 { text-transform: uppercase; } /* ALL LETTERS CAPITALIZED */
+         h3 { text-transform: lowercase; } /* all letters lower */
+         h2 { text-transform: capitalize; } /* Words Are Title Cased */
 
 28. How do I add a 1px border around my div that is dotted and black?
     css: div {
@@ -109,6 +106,7 @@ https://codepen.io/kcjerrell/pen/qBRXyaW
     }    
 
 29. How do I select everything on the page? 
+    Ctrl+A. Just kidding.
     css: * { }
 
 30. How do I write a comment in CSS?
@@ -133,4 +131,23 @@ https://codepen.io/kcjerrell/pen/qBRXyaW
     git push -u origin branch-name    
 
 37. Walk me through Lambda's git flow.
-    Not right now.
+    - On GitHub:
+      - Fork the repo
+      - Copy the repo url
+    - In terminal:
+      - navigate into target directory
+      - $ git clone [repo url]
+      - cd [repo directory]
+      - $ git checkout -b [branch-name]
+      - make some changes or add files to the project
+      - to see which files have changed or need to to be staged:
+         - $ git status
+      - $ git add .
+      - $ git commmit -m '[describe the changes you made]'
+      - $ git push -u origin [branch-name]
+    - On GitHub:
+      - Select [branch-name]
+      - Click "New Pull Request"
+      - Make sure you are merging in to the fork you created and not the original repo
+      - Click "Create Pull Request"
+      - Don't merge your own request!
